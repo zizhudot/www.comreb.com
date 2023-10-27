@@ -597,9 +597,9 @@ google_adsense:
 
 # Insert ads manually (手動插入廣告)
 ad:
-  # index:
-  # aside:
-  # post:
+  index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5207593098613095"data-ad-slot="5839208554"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5207593098613095" data-ad-slot="3728050538" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  post: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5207593098613095" data-ad-slot="6522515085" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 # Verification (站長驗證)
 # --------------------------------------
