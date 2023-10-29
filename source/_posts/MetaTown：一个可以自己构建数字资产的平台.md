@@ -1,6 +1,6 @@
 ---
 title: "MetaTown：A Platform for Building Digital Assets by Yourself"
-description: "Huawei Cloud Solution as Code has launched a groundbreaking solution called "Building a Digital Asset Platform based on MetaTown". Supported by Huawei Cloud's digital asset chain, this solution enables the end-to-end management of digital assets, including casting, issuance, circulation, and rights confirmation, using underlying blockchain technology. Additionally, a one-click deployment solution and a quick experience version have been released, along with open-source code, to assist small and medium-sized enterprises in rapidly building their own digital asset platforms."
+description: "Huawei Cloud Solution as Code has launched a groundbreaking solution called Building a Digital Asset Platform based on MetaTown. Supported by Huawei Cloud's digital asset chain, this solution enables the end-to-end management of digital assets, including casting, issuance, circulation, and rights confirmation, using underlying blockchain technology. Additionally, a one-click deployment solution and a quick experience version have been released, along with open-source code, to assist small and medium-sized enterprises in rapidly building their own digital asset platforms."
 date: 2022-10-01 20:00:00
 categories:
  - Blockchain
@@ -13,8 +13,6 @@ tags:
 Huawei Cloud Solution as Code relaunched the solution "Building a Digital Asset Platform Based on MetaTown", which is supported by Huawei Cloud Digital Asset Chain with the underlying blockchain technology, realizing the full lifecycle management of casting, issuance, circulation, and confirmation of rights of digital assets. At the same time, a one-click deployment solution and a rapid experience version with open source code are introduced to help SMEs quickly build their own digital asset platform.
 
 ![](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310292026663.webp)
-
-**Build a digital asset platform based on MetaTown *# **Building a digital asset platform based on MetaTown
 
 ## I. NFT Market Prospect
 
@@ -44,7 +42,7 @@ This solution is based on the Huawei Cloud open source project MetaTown, which c
 
 The platform can realize the whole life cycle management of digital assets, such as casting, issuing, circulation, and rights confirmation. [](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310292029896.webp)
 
-* Building a digital asset platform based on MetaTown
+Building a digital asset platform based on MetaTown
 
 ### Capability One: Digital Asset Chain DAC
 
@@ -64,13 +62,13 @@ Digital asset chain provides rich asset storage management interface, supporting
 
 Based on this, MetaTown digital asset platform has three major advantages:
 
-(1) **Ultra-high performance. **Huawei Cloud Digital Asset Chain DAC supports **50,000 times/second** concurrent on-chain digital asset creation, and supports **10 billion** digital asset issuance flow.
+(1) **Ultra-high performance.** Huawei Cloud Digital Asset Chain DAC supports 50,000 times/second concurrent on-chain digital asset creation, and supports 10 billion digital asset issuance flow.
 
-(2) **Supports one-click deployment. **Users can deploy various cloud service resources based on official sample templates with one click to quickly build the MetaTown digital asset platform.
+(2) **Supports one-click deployment.** Users can deploy various cloud service resources based on official sample templates with one click to quickly build the MetaTown digital asset platform.
 
-(3) **Open source and customization. **The solution is open source and can be used for commercial purposes for free, and can be customized on the basis of the source code to meet the complexity and variety of NFT business scenarios.
+(3) **Open source and customization.** The solution is open source and can be used for commercial purposes for free, and can be customized on the basis of the source code to meet the complexity and variety of NFT business scenarios.
 
-## Fourth, MetaTown program application scenarios**
+## Fourth, MetaTown program application scenarios
 
 Based on MetaTown, the digital asset platform solution covers multiple industries and meets the needs of various digital asset scenarios:
 

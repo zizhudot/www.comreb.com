@@ -24,13 +24,13 @@ The fourth is to realize the strong protection of all-end privacy and security.
 
 At the bottom of the system kernel layer, Xiaomi has fused the self-developed Vela system kernel with the deeply modified Linux system kernel, reconfiguring various basic modules such as performance scheduling, task management, memory management, file management, and so on, to achieve a significant increase in performance and efficiency.
 
-This new fusion kernel** supports more than 200 processor platforms and more than 20 file systems**, and can be flexibly configured according to the difference in hardware capabilities, providing excellent compatibility and completely freeing up the performance of each individual device.
+This new fusion kernel **supports more than 200 processor platforms and more than 20 file systems**, and can be flexibly configured according to the difference in hardware capabilities, providing excellent compatibility and completely freeing up the performance of each individual device.
 
-In the service and framework layer on top of the system kernel layer, Xiaomi has incorporated Android's service framework and the service framework of its own Vela system as "middleware"; at the same time, it has newly created 8 major subsystems, of which the new AI subsystem integrates the ability of large models and becomes the " intelligent brain" of the whole system. The new AI subsystem integrates the capabilities of large models and becomes the "intelligent brain" of the whole system**, which not only enables single devices to realize strong end-side AI capabilities, but also empowers the entire ecosystem with intelligent capabilities**.
+In the service and framework layer on top of the system kernel layer, Xiaomi has incorporated Android's service framework and the service framework of its own Vela system as "middleware"; at the same time, it has newly created 8 major subsystems, of which the new AI subsystem integrates the ability of large models and becomes the " intelligent brain" of the whole system. The new AI subsystem integrates the capabilities of large models and becomes the "intelligent brain" of the whole system **, which not only enables single devices to realize strong end-side AI capabilities, but also empowers the entire ecosystem with intelligent capabilities**.
 
 The top layer of HyperConnect cross-end layer, Xiaomi allows all devices to unify the connection protocol, and real-time communication, and ultimately build a "people, cars and home ecological" intelligent world.
 
-It is worth mentioning that Xiaomi Surge OS has created a full-end security system through the kernel layer, service framework layer, cross-end layer, especially the kernel layer,** Xiaomi has enabled a completely independent "self-research micro-kernel security system", which guarantees security from the bottom to realize **.
+It is worth mentioning that Xiaomi Surge OS has created a full-end security system through the kernel layer, service framework layer, cross-end layer, especially the kernel layer, **Xiaomi has enabled a completely independent "self-research micro-kernel security system", which guarantees security from the bottom to realize**.
 
 Finally attached Lei Jun original text:
 

@@ -18,7 +18,7 @@ Currently, the development of large models has been very hot, and the training a
 1.1 The current mainstream distributed training of large models mainly includes two kinds:
 
 + Data parallel training
-+ + model parallel training
++ model parallel training
 
 ## DeepSpeed
 
@@ -38,7 +38,8 @@ DeepSpeed provides communication strategies such as mpi, gioo, nccl, and so on.
 | --- | --- |
 | mpi | It is a communication library for cross-boundary points, often used for distributed training on CPU clusters |
 | gloo | It is a high-performance distributed training framework that can support distributed training on CPU or GPU |
-| nccl | It is a GPU-specific communication library provided by nvidia and is widely used for distributed training on GPUs | | nccl is a high-performance distributed training framework that supports distributed training on CPUs and GPUs.
+| nccl | It is a GPU-specific communication library provided by nvidia and is widely used for distributed training on |
+| GPU | nccl is a high-performance distributed training framework that supports distributed training on CPUs and GPUs. |
 
 When we use DeepSpeed for distributed training, we can choose the appropriate communication library according to our own situation, usually, if it is GPU for distributed training, you can choose nccl.
 
@@ -56,16 +57,6 @@ Zero divides the model parameters into three parts:
 | Gradient | The data generated during the backpropagation process, which determines the direction of the parameter update |
 | Model Parameter | model parameter, the information "learned" from the data during model training | | model parameter, the information "learned" from the data during model training.
 
-The levels of Zero are as follows:
-
-| Level | Role | Model Parameter | Model Parameter
-| Zero-0 | Do not use Zero
-| Zero-0 | Do not use all types of slicing, only use DeepSpeed as the DDP | Zero-1 | Split the model.
-| Zero-1 | Split Optimizer States, 4x less memory, same communication capacity and data parallelism |
-Zero-2 | Split Optimizer States and Gradients, reduce memory by 8x, same communication capacity and data parallelism | Zero-3 | Split Optimizer States and Gradients, reduce memory by 4x, same communication capacity and data parallelism
-| Zero-3 | Splitting Optimizer States, gradients, and parametres, the memory reduction is linear in data parallelism. For example, splitting between 64 GPUs (Nd=64) will produce a 64-fold memory reduction. There is a modest 50% increase in communication |
-| Zero-Infinity | Zero-Infinity is an extension of Zero-3 that allows large models to be trained by expanding GPU and CPU memory using NVMe SSDs |
-
 ### 2.4 Zero-Offload
 
 CPUs are relatively cheap compared to GPUs, so the Zero-Offload idea is to put (offload) certain model states from the training phase into memory as well as CPU computation.
@@ -78,7 +69,7 @@ What Zero-Offload wants to do is to distribute compute nodes and data nodes on G
 
 #### Zero-Offload slicing idea
 
-There are four compute class nodes in the following figure: fwd, bwd, param update and float2half, the first two have roughly O(MB) computational complexity, B is the batch size, and the last two have O(M) computational complexity. In order not to reduce the computational efficiency, the first two nodes are placed on the GPU, and the last two nodes not only have a small computational amount but also need to deal with the Adam state, so they are placed on the CPU, and the Adam state is naturally placed in the memory, and in order to simplify the data graph, the first two nodes are fused into a single node, FWD-BWD Super Node, and the last two nodes are fused into a single node, Update Super Node. Super Node. as shown on the right side of the figure below, slicing along the two edges gradient 16 and parameter 16.﻿
+There are four compute class nodes in the following figure: fwd, bwd, param update and float2half, the first two have roughly O(MB) computational complexity, B is the batch size, and the last two have O(M) computational complexity. In order not to reduce the computational efficiency, the first two nodes are placed on the GPU, and the last two nodes not only have a small computational amount but also need to deal with the Adam state, so they are placed on the CPU, and the Adam state is naturally placed in the memory, and in order to simplify the data graph, the first two nodes are fused into a single node, FWD-BWD Super Node, and the last two nodes are fused into a single node, Update Super Node. Super Node. as shown on the right side of the figure below, slicing along the two edges gradient 16 and parameter 16.
 
 ![](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310292050107.png)
 
@@ -88,7 +79,7 @@ The GPU performs forward and backward computation, transmits the gradient to the
 
 ![](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310292050452.png)
 
-### **2.5 Mixed precision:
+### 2.5 Mixed precision:
 
 Mixed-precision training is a technique that uses both FP16 (half-precision floating-point number) and FP32 (single-precision floating-point number) precision in the training process. The use of FP16 can greatly reduce the memory footprint, thus allowing for the training of larger scale models. However, due to the lower precision of FP16, problems such as gradient disappearance and model collapse may occur during the training process.
 
