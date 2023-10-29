@@ -34,4 +34,4 @@ It is worth mentioning that Xiaomi Surge OS has created a full-end security syst
 
 Finally attached Lei Jun original text:
 
-! [](https://oscimg.oschina.net/oscnet/up-528387a25ee0594601e2cfd2329d864f770.png)
+![](https://oscimg.oschina.net/oscnet/up-528387a25ee0594601e2cfd2329d864f770.png)
