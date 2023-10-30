@@ -20,7 +20,7 @@ According to reports, from the beginning of the architectural design, Xiaomi has
 
 The fourth is to realize the strong protection of all-end privacy and security.
 
-![](https://oscimg.oschina.net/oscnet/up-eb9e82e3b3346857f0225150b80e22e6f62.png)
+![](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310301429286.png)
 
 At the bottom of the system kernel layer, Xiaomi has fused the self-developed Vela system kernel with the deeply modified Linux system kernel, reconfiguring various basic modules such as performance scheduling, task management, memory management, file management, and so on, to achieve a significant increase in performance and efficiency.
 
@@ -34,4 +34,4 @@ It is worth mentioning that Xiaomi Surge OS has created a full-end security syst
 
 Finally attached Lei Jun original text:
 
-![](https://oscimg.oschina.net/oscnet/up-528387a25ee0594601e2cfd2329d864f770.png)
+![](https://cdn.jsdelivr.net/gh/youngjuning/images@main/202310301428834.png)
